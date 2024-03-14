@@ -193,3 +193,14 @@ exercises.c:74:8: error: variable ‘newArr’ set but not used [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 6e68b3b
+Thu 14 Mar 2024 09:13:30 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:75:11: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   75 |   *result = (int *) malloc(sizeof(int) * talla);
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+711a861

@@ -204,3 +204,14 @@ exercises.c:75:11: error: assignment to ‘int’ from ‘int *’ makes integer
 cc1: all warnings being treated as errors
 Compilation failed
 711a861
+Thu 14 Mar 2024 09:13:46 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:75:11: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   75 |   *result = malloc(sizeof(int) * talla);
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+2cdb0a7

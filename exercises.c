@@ -72,7 +72,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[])
 {
   int talla = size1 + size2;
-  *result = (int *) malloc(sizeof(int) * talla);
+  *result = malloc(sizeof(int) * talla);
 }
 
 /*

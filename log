@@ -315,3 +315,9 @@ exercises.c:135:28: error: ‘anioPublicacion’ undeclared (first use in this f
       |                            ^~~~~~~~~~~~~~~
 Compilation failed
 1a969bd
+Thu 14 Mar 2024 11:51:29 PM UTC: 
+ exercises.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+ tests:  0|1
+total_score: 60/70
+3279e9a

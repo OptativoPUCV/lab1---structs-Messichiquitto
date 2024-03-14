@@ -321,3 +321,24 @@ Thu 14 Mar 2024 11:51:29 PM UTC:
  tests:  0|1
 total_score: 60/70
 3279e9a
+Thu 14 Mar 2024 11:57:26 PM UTC: 
+ exercises.c | 16 +++++++++++++++-
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:161:3: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+  161 |   for (int i = 0; i < size; i++)
+      |   ^~~
+exercises.c:163:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  163 |     temp->numero = arr[i];
+      |     ^~~~
+exercises.c:163:24: error: ‘i’ undeclared (first use in this function)
+  163 |     temp->numero = arr[i];
+      |                        ^
+exercises.c:163:24: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:170:1: error: control reaches end of non-void function [-Werror=return-type]
+  170 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+334be97

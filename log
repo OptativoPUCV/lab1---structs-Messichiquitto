@@ -176,3 +176,20 @@ Thu 14 Mar 2024 08:59:07 PM UTC:
  tests:  0|4
 total_score: 30/70
 c0d1bad
+Thu 14 Mar 2024 09:00:25 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 30/70
+6e68b3b
+Thu 14 Mar 2024 09:10:56 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:74:8: error: variable ‘newArr’ set but not used [-Werror=unused-but-set-variable]
+   74 |   int *newArr = NULL;
+      |        ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6e68b3b

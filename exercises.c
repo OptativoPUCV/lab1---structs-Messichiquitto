@@ -52,11 +52,11 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
   *newSize = 0;
   for(int i = 0; i < size; i++)
     {
-      newArr = realloc(newArr, sizeof(int) * (*newSize + 1));
       if(arr[i] % 2 == 0)
       {
-         newArr[*newSize] = arr[i];
-         (*newSize)++;
+        newArr = realloc(newArr, sizeof(int) * (*newSize + 1));
+        newArr[*newSize] = arr[i];
+        (*newSize)++;
       }
     }
   return newArr;
@@ -71,9 +71,9 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[])
 {
-  //*newArr = NULL;
-  
-  
+  int *newArr = NULL;
+  int talla = size1 + size2;
+  newArr = malloc(sizeof(int) * talla);
 }
 
 /*

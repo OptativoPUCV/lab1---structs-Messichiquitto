@@ -112,3 +112,17 @@ exercises.c:57:17: error: ‘j’ undeclared (first use in this function)
 exercises.c:57:17: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 6f311a9
+Thu 14 Mar 2024 08:50:11 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:52:39: error: invalid operands to binary * (have ‘int *’ and ‘long unsigned int’)
+   52 |   int *newArr = (int *)malloc(newSize * sizeof(int));
+      |                                       ^
+exercises.c:57:17: error: ‘j’ undeclared (first use in this function)
+   57 |          newArr[j] = arr[i];
+      |                 ^
+exercises.c:57:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c80c8bc

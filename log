@@ -159,3 +159,14 @@ Thu 14 Mar 2024 08:54:11 PM UTC:
  tests:  0|4
 total_score: 30/70
 ff9d376
+Thu 14 Mar 2024 08:59:00 PM UTC: 
+ exercises.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:74:4: error: ‘newArr’ undeclared (first use in this function)
+   74 |   *newArr = NULL;
+      |    ^~~~~~
+exercises.c:74:4: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+108bb6b

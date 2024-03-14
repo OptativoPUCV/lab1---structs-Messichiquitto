@@ -47,15 +47,15 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) 
-{ 
-  *newSize = 0;
-  int *newArr = (int *)malloc(newSize * sizeof(int));
+{
+  int *newArr = NULL;
   for(int i = 0; i < size; i++)
     {
+      newArr = realloc(newArr, sizeof(int) * (*newSize + 1));
       if(arr[i] % 2 == 0)
       {
          newArr[j] = arr[i];
-         j++;
+         (*newSize)++;
       }
     }
   return newArr;

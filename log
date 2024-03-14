@@ -126,3 +126,14 @@ exercises.c:57:17: error: ‘j’ undeclared (first use in this function)
 exercises.c:57:17: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 c80c8bc
+Thu 14 Mar 2024 08:52:28 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:57:17: error: ‘j’ undeclared (first use in this function)
+   57 |          newArr[j] = arr[i];
+      |                 ^
+exercises.c:57:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+9df2c4b

@@ -294,3 +294,24 @@ Thu 14 Mar 2024 11:45:47 PM UTC:
  tests:  0|2
 total_score: 50/70
 805752d
+Thu 14 Mar 2024 11:50:27 PM UTC: 
+ exercises.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘initLibro’:
+exercises.c:132:25: error: ‘titulo’ undeclared (first use in this function)
+  132 |   strcpy(libro->titulo, titulo);
+      |                         ^~~~~~
+exercises.c:132:25: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:133:31: error: ‘autor’ undeclared (first use in this function); did you mean ‘Autor’?
+  133 |   strcpy(libro->autor.nombre, autor);
+      |                               ^~~~~
+      |                               Autor
+exercises.c:134:33: error: ‘anioNacimiento’ undeclared (first use in this function)
+  134 |   libro->autor.anioNacimiento = anioNacimiento;
+      |                                 ^~~~~~~~~~~~~~
+exercises.c:135:28: error: ‘anioPublicacion’ undeclared (first use in this function)
+  135 |   libro->anioPublicacion = anioPublicacion;
+      |                            ^~~~~~~~~~~~~~~
+Compilation failed
+1a969bd

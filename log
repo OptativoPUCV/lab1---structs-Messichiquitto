@@ -5,3 +5,17 @@ Thu 14 Mar 2024 08:34:38 PM UTC:
  tests:  0|7
 total_score: 0/70
 6c1c83f
+Thu 14 Mar 2024 08:37:03 PM UTC: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:15:32: error: expected statement before ‘)’ token
+   15 |   for(int i = 0; i < size; i++))
+      |                                ^
+exercises.c:17:14: error: ‘i’ undeclared (first use in this function)
+   17 |       if(arr[i] > temp)
+      |              ^
+exercises.c:17:14: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+3720fa5

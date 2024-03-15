@@ -360,3 +360,17 @@ exercises.c:163:24: note: each undeclared identifier is reported only once for e
 cc1: all warnings being treated as errors
 Compilation failed
 8702405
+Fri 15 Mar 2024 12:01:39 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:158:43: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘*’ token
+  158 |   Nodo *cabeza = NULL, *temp = NULL, Nodo *actual = NULL;
+      |                                           ^
+exercises.c:167:9: error: ‘actual’ undeclared (first use in this function)
+  167 |         actual->siguiente = temp;
+      |         ^~~~~~
+exercises.c:167:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+8c950cb
